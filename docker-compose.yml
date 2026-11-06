@@ -1,0 +1,13 @@
+# SafeShip local development — Day 2 (app only; PostgreSQL added on Day 3)
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SAFESHIP_VERSION=dev-local
+    # App ports are loopback-bound in production; here we expose localhost
+    # only for local development. In AWS, Nginx is the sole client entry point.
+    # App and database are not publicly exposed.

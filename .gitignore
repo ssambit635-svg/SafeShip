@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[c]
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Docker
+.docker/
